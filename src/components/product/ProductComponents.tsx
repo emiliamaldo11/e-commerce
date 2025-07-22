@@ -19,8 +19,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         h-full                /* Asegura que la tarjeta ocupe el alto completo disponible en una grilla */
 
         // --- Anchos responsivos para que se adapte bien ---
-        w-72                  /* Ancho base de 288px para móviles (como md:w-72 que te gustó antes) */
-        md:w-96          
+        h-full
+        w-full        
       "
     >
       {/* Contenedor de la Imagen y Efectos Hover */}
@@ -87,7 +87,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
 export const ProductList : React.FC = () => {
     return (
-        <div>
+        <div className="
+        grid
+        grid-cols-2
+        sm:grid-cols-4
+        gap-6
+        px-4
+        py-10
+      ">
             {allProducts.map(product => (
                 <ProductCard key={product.id} product={product}></ProductCard>
             ))}

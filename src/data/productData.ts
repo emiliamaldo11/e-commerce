@@ -62,7 +62,7 @@ export const allProducts: Product[] = [
     description: 'Stay hydrated with the official Lando Norris water bottle. Durable and stylish.',
     price: '€20.00',
     // URL directamente de landonorris.store que SÍ debería funcionar
-    imageUrl: 'https://landonorris.store/cdn/shop/files/LN_4_BOTTLE.png?v=1708453472&width=750',
+    imageUrl: 'https://landonorris.store/cdn/shop/files/BLACK-HOODIE-FRONT_600x@2x.png?v=1724832571',
     category: 'Accessories',
     stock: 100,
     isFeatured: false,

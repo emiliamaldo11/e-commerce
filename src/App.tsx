@@ -2,7 +2,8 @@ import React from "react";
 import Navbar from './components/navbar/Navbar';
 import Hero from './components/Hero';
 import { ProductCard, ProductList } from './components/product/ProductComponents';
-import { allProducts } from "./data/productData";
+import { allProducts } from './data/productData';
+import { CarouselDesktop } from "./components/product/ProductCarousel";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <main>
       <Hero />
       <ProductList/>
+      <CarouselDesktop products={allProducts} />
     </main>
 
    </div>
