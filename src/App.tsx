@@ -3,7 +3,7 @@ import Navbar from './components/navbar/Navbar';
 import Hero from './components/Hero';
 import { ProductCard, ProductList } from './components/product/ProductComponents';
 import { allProducts } from './data/productData';
-import { CarouselDesktop } from "./components/product/ProductCarousel";
+import { CarouselDesktop, CarouselMobile } from "./components/product/ProductCarousel";
 
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
       <Hero />
       <ProductList/>
       <CarouselDesktop products={allProducts} />
+      <CarouselMobile products={allProducts} />
     </main>
 
    </div>

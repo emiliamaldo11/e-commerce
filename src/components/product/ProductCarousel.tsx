@@ -2,11 +2,11 @@ import { ProductCard } from './ProductComponents';
 import { allProducts } from '../../data/productData';
 import { useState } from 'react';
 
-interface CarrouselProps {
+interface CarouselProps {
     products: Product[]
 }
 
-export const CarouselDesktop: React.FC<CarrouselProps> = ({ products }) => {
+export const CarouselDesktop: React.FC<CarouselProps> = ({ products }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const items = 3;
     const totalSlides = Math.ceil(products.length / items);
@@ -63,3 +63,20 @@ export const CarouselDesktop: React.FC<CarrouselProps> = ({ products }) => {
         </div>
     );
 };
+
+export const CarouselMobile: React.FC<CarouselProps> = ({products}) => {
+    return (
+
+        <div className='overflow-x-auto scroll-snap-x mandatory px-4'>
+            <div className='flex gap-4 w-full '>
+                {products.map((product)=> (
+                    <div key={product.id}
+                    // shrink-0 no achica la imagen entonces usa el w-full
+                    className='inline-block w-full shrink-0'>
+                        <ProductCard product={product}></ProductCard>
+                    </div>
+                ))}
+            </div>
+        </div>
+    )
+}
