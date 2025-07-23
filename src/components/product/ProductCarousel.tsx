@@ -29,7 +29,7 @@ export const CarouselDesktop: React.FC<CarouselProps> = ({ products }) => {
     );
 
     return (
-        <div className="relative w-full h-full p-12">
+        <div className="relative w-full h-full px-12">
             {/* Productos visibles */}
             <div className="flex justify-center gap-4 overflow-hidden">
                 {visibleProducts.map((product) => (
