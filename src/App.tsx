@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import { ProductCard, ProductList } from './components/product/ProductComponents';
 import { allProducts } from './data/productData';
 import { CarouselDesktop, CarouselMobile } from "./components/product/ProductCarousel";
+import { HomePage } from "./pages/Home";
 
 
 function App() {
@@ -11,10 +12,7 @@ function App() {
     <div>
     <Navbar />
     <main>
-      <Hero />
-      <ProductList/>
-      <CarouselDesktop products={allProducts} />
-      <CarouselMobile products={allProducts} />
+     <HomePage/>
     </main>
 
    </div>
